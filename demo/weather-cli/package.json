@@ -1,0 +1,31 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "private": false,
+  "description": "CLI for getting weather",
+  "main": "index.js",
+  "bin":"./index.js", 
+  "os":["linux"],
+  "man":["./README.MD"],
+  "engines": {"node":">14"},
+  "funding":"",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Saburov Evgeniy",
+  "license": "ISC",
+  "homepage": "https://home.ru",
+  "repository": {
+    "type": "git",
+    "url": "https://url.ru"
+  },
+  "bugs": {
+    "url": "https://url.ru",
+    "email": "email@mail.ru"
+  }, 
+}
