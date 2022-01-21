@@ -4,11 +4,14 @@
   "private": false,
   "description": "CLI for getting weather",
   "main": "index.js",
-  "bin":"./index.js", 
-  "os":["linux"],
-  "man":["./README.MD"],
-  "engines": {"node":">14"},
-  "funding":"",
+  "bin": "./index.js",
+  "man": [
+    "./README.MD"
+  ],
+  "engines": {
+    "node": ">14"
+  },
+  "funding": "",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,5 +30,8 @@
   "bugs": {
     "url": "https://url.ru",
     "email": "email@mail.ru"
-  }, 
+  },
+  "dependencies": {
+    "axios": "0.25.0"
+  }
 }
