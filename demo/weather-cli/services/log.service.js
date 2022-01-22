@@ -17,9 +17,18 @@ console.log(
   -s [CITY] для установки города
   -h для выода помощи
   -t [API_KEY] для сохранения токена 
-  `
-  );
+  `);
+}
+
+const printWeather = (res, icon) =>{
+  console.log(
+    dedent`${chalk.bgYellow(' Weather')} Погода в городе ${res.name}
+    ${icon} ${res.weather[0].description}
+    Температура: ${res.main.temp} (ощащается как ${res.main.feels_like})
+    Влажность: ${res.main.humidity}%
+    Скорость ветра: ${res.wind.speed}
+    `);
 }
 
 
-export {printError, printSuccess, printHelp}
+export {printError, printSuccess, printHelp, printWeather}
