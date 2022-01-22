@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": false,
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
-  "man": [
-    "./README.MD"
-  ],
+  "main": "weather.js.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "engines": {
     "node": ">14"
   },
@@ -32,6 +32,8 @@
     "email": "email@mail.ru"
   },
   "dependencies": {
-    "axios": "0.25.0"
+    "axios": "0.25.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
   }
 }
