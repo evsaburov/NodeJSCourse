@@ -1,3 +1,58 @@
 https://github.com/AlariCode/4-nodejs-demo-1.git
 
-https://github.com/AlariCode/4-nodejs-demo-1.git
+git add origin git@github.com:evsaburov/NodeJSCourse.git
+push -u origin master
+
+npm search http - поиск по ключевым словам
+npm audit - проверка безопасности
+npm ci -  переустановка
+npm fund - показать фандинги
+npm dedup - поиск дубликатов зависимостей
+npm audit fix --force 
+
+npm cash verify - проверить кэш npm
+npm cash clean - очистить кэш npm
+
+npm i -D - gulp установить как дев зависимость
+
+удалть пакет
+1) удать из packege.json -> npm i
+2) npm uninstall gulp
+2) npm uni gulp
+
+.bin - папка с исполняемыиы файлами
+
+Глобальная установка через флаг -
+npm -i -g gulp
+
+npm i chalk раскрашивает текст в консоли
+npm i dedent-js убирает лишние отступы в текстовом выводе
+
+// import { join, basename, dirname, extname, relative, isAbsolute, resolve, sep } from 'path';
+// console.log(homeDir());
+// console.log(basename(filePath));
+// console.log(dirname(filePath));
+// console.log(extname(filePath));
+// console.log(relative(filePath, dirname(filePath)));
+// console.log(isAbsolute(filePath));
+// console.log(resolve('..'));
+// console.log(sep);
+
+
+// const url = new URL('https://api.openweathermap.org/data/2.5/weather');
+// url.searchParams.append('q', city);
+// url.searchParams.append('appid', token);
+// url.searchParams.append('lang', 'ru');
+// url.searchParams.append('units', 'metric');
+
+// https.get(url, (responce) => {
+//   let res = '';
+//   responce.on('data', chunk => {
+//     res += chunk;
+//   });
+//   responce.on('end', () => {
+//     console.log(res);
+//   });
+// });
+
+https://github.com/AlariCode/4-nodejs-demo-3.git

@@ -30,5 +30,4 @@ const printWeather = (res, icon) =>{
     `);
 }
 
-
 export {printError, printSuccess, printHelp, printWeather}
