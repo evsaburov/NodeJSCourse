@@ -1,16 +1,19 @@
 import express, { Express } from 'express';
 import { userRouter } from './users/users';
 import { Server } from 'http';
+import { LoggerService } from './logger/loger.service';
 
 
 export class App {
   app: Express;
   server: Server;
   port: number;
+  logger: LoggerService;
 
-  constructor() {
+  constructor(logger: LoggerService) {
     this.port = 8000;
     this.app = express();
+    this.logger = logger;
   }
 
   useRoutes() {
@@ -19,7 +22,7 @@ export class App {
 
   public async init() {
     this.useRoutes();
-    console.log(`Сервер запущен на http://localhost:${this.port}`);
     this.server = this.app.listen(this.port);
+    this.logger.log(`Сервер запущен на http://localhost:${this.port}`);
   }
 }
