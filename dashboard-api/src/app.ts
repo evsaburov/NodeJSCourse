@@ -6,8 +6,8 @@ import { LoggerService } from './logger/loger.service';
 
 export class App {
   app: Express;
-  server: Server;
   port: number;
+  server: Server;
   logger: LoggerService;
 
   constructor(logger: LoggerService) {
