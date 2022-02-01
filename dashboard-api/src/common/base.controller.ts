@@ -23,7 +23,7 @@ export abstract class BaseController {
     return this.send<T>(res, 200, message);
   }
 
-  public created(res: Response,) {
+  public created(res: Response) {
     return res.sendStatus(201);
   }
 
