@@ -26,3 +26,14 @@ npm i tslog
 
 npm i reflect-metadata
 npm i inversidy
+
+npm i -D eslint
+npm i -D @typescript-eslint/parser
+npm i -D @typescript-eslint/eslint-plugin
+npm i -D prettier
+npm i -D eslint-config-prettier
+npm i -D eslint-plugin-prettier
+npm i -D typescript
+
+npm i -D nodemon
+npm i -D ts-node
